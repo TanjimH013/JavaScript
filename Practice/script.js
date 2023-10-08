@@ -41,16 +41,11 @@ function golfScore(par, strokes) {
     return names[6];
   }
 }
-console.log(golfScore(4, 1));
-console.log(golfScore(4, 2));
-console.log(golfScore(5, 4));
-golfScore(4, 1);
-console.log(golfScore(4, 2));
-console.log(golfScore(5, 2));
-console.log(golfScore(4, 3));
-console.log(golfScore(3, 4));
+
 console.log(golfScore(1, 1));
+console.log(golfScore(4, 2));
+console.log(golfScore(4, 3));
 console.log(golfScore(5, 5));
 console.log(golfScore(4, 5));
-console.log(golfScore(4, 6));
-console.log(golfScore(4, 7));
+console.log(golfScore(5, 7));
+console.log(golfScore(5, 8));
