@@ -1,10 +1,10 @@
-"use strict";
+'use strict';
 
 let hasDriversLicense = false;
 const passTest = true;
 
 if (passTest) hasDriversLicense = true;
-if (hasDriversLicense) console.log("I can Drive");
+if (hasDriversLicense) console.log('I can Drive');
 
 //Using of FUNCTION
 
@@ -40,7 +40,7 @@ const ageTOW = calAgeTOW(1993);
 console.log(ageONE, ageTOW);
 
 //ARROW function
-const calAgeTHREE = (birthYear) => 2037 - birthYear;
+const calAgeTHREE = birthYear => 2037 - birthYear;
 const AgeTHREE = calAgeTHREE(1993);
 console.log(AgeTHREE);
 
@@ -51,17 +51,37 @@ function yearsUntilRetirement(birthYear, firstName) {
   return `${firstName} retirement in ${retirement} years`;
 }
 
-console.log(yearsUntilRetirement(1988, "Abdullah"));
-console.log(yearsUntilRetirement(1985, "Nurullah"));
-console.log(yearsUntilRetirement(1987, "Abdul Qoyum"));
-console.log(yearsUntilRetirement(1989, "Abdul Quddus"));
+console.log(yearsUntilRetirement(1988, 'Abdullah'));
+console.log(yearsUntilRetirement(1985, 'Nurullah'));
+console.log(yearsUntilRetirement(1987, 'Abdul Qoyum'));
+console.log(yearsUntilRetirement(1989, 'Abdul Quddus'));
 
 //Assignments of Array
-const populations = [10, 1441, 332, 83];
-console.log(populations.length === 4);
-const percentages = [
-  percentagesOfWorld1(populations[0]),
-  percentagesOfWorld1(populations[1]),
-  percentagesOfWorld1(populations[2]),
-  percentagesOfWorld1(populations[3]),
-];
+// const populations = [10, 1441, 332, 83];
+// console.log(populations.length === 4);
+// const percentages = [
+//   percentages(populations[0]),
+//   percentages(populations[1]),
+//   percentages(populations[2]),
+//   percentages(populations[3]),
+// ];
+
+console.log('--------Default Parameter---------');
+const bookings = [];
+const booking = function (
+  trainNum,
+  numPassengers = 1,
+  price = 500 * numPassengers
+) {
+  const createBooking = {
+    trainNum,
+    numPassengers,
+    price,
+  };
+  console.log(createBooking);
+  bookings.push(createBooking);
+};
+booking('CHO', 2);
+booking('CHO', 4);
+booking('CHO', 1.5);
+booking('CHO', 1);
