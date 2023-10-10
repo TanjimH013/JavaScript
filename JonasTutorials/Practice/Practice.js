@@ -105,3 +105,24 @@ bookingInfo('D1', 'Mr.Shikdar', 1);
 bookingInfo('D2', 'Mr.Talukdar', 1);
 bookingInfo('D3, D4, E3, E4', 'Mr.Bahndary', 4);
 bookingInfo('C3, C4, E1, E2, F1, F2, F3, F4', 'Mr.Anonymous', undefined, 5500);
+
+const metroBooking = [];
+
+const creatingMetroBooking = function (
+  busNum,
+  passengerName,
+  passengerNum = 1,
+  price = 30 * passengerNum
+) {
+  const metroTicket = {
+    busNum,
+    passengerName,
+    passengerNum,
+    price,
+  };
+  console.log(metroTicket);
+  metroBooking.push(metroTicket);
+};
+
+creatingMetroBooking('A1,A2', 'Mr.Kuddus', 2);
+creatingMetroBooking('B-All, C-All, E-All, G-All', 'Anonymous', undefined, 480);
