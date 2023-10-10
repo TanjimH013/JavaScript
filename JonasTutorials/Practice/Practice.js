@@ -67,7 +67,7 @@ console.log(yearsUntilRetirement(1989, 'Abdul Quddus'));
 // ];
 
 console.log('--------Default Parameter---------');
-const bookings = [];
+const bookingTrain = [];
 const booking = function (
   trainNum,
   numPassengers = 1,
@@ -79,9 +79,29 @@ const booking = function (
     price,
   };
   console.log(createBooking);
-  bookings.push(createBooking);
+  bookingTrain.push(createBooking);
 };
 booking('CHO', 2);
 booking('CHO', 4);
 booking('CHO', 1.5);
 booking('CHO', 1);
+
+console.log('------Coach Service-------');
+
+const bookingCoach = [];
+const bookingInfo = function (
+  coachNum,
+  passengerName,
+  passengerNum = 1,
+  price = 700 * passengerNum
+) {
+  const ticketBooking = { coachNum, passengerName, passengerNum, price };
+  console.log(ticketBooking);
+  bookingCoach.push(ticketBooking);
+};
+
+bookingInfo('C1,C2', 'Mr.Sheik', 2);
+bookingInfo('D1', 'Mr.Shikdar', 1);
+bookingInfo('D2', 'Mr.Talukdar', 1);
+bookingInfo('D3, D4, E3, E4', 'Mr.Bahndary', 4);
+bookingInfo('C3, C4, E1, E2, F1, F2, F3, F4', 'Mr.Anonymous', undefined, 5500);
