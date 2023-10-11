@@ -120,9 +120,32 @@ const creatingMetroBooking = function (
     passengerNum,
     price,
   };
-  console.log(metroTicket);
+  console.table(metroTicket);
   metroBooking.push(metroTicket);
 };
 
 creatingMetroBooking('A1,A2', 'Mr.Kuddus', 2);
 creatingMetroBooking('B-All, C-All, E-All, G-All', 'Anonymous', undefined, 480);
+
+console.log('----- How Passing Argument Works With Value ------');
+
+const train = 'Suborna Express';
+const passengerName = {
+  name: 'Tanjim Hasan',
+  nid: 2817009216,
+};
+
+const checkIn = function (trainNum, passengerNum) {
+  trainNum = 'Sonar Bangla';
+  passengerNum.name = 'Mr. ' + passengerNum.name;
+
+  if (passengerNum.nid === 2817009216) {
+    alert('Welcome to the platform');
+  } else {
+    alert('Wrong NID!');
+  }
+};
+
+checkIn(train, passengerName);
+console.table(train);
+console.table(passengerName);
