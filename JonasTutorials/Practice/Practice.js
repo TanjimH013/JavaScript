@@ -149,3 +149,48 @@ const checkIn = function (trainNum, passengerNum) {
 checkIn(train, passengerName);
 console.table(train);
 console.table(passengerName);
+
+class Ticket {
+  constructor(Coachclass, sit, passengerNum, name, nid, cell, drop, price) {
+    this.Coachclass = Coachclass;
+    this.sit = sit;
+    this.passengerNum = passengerNum;
+    this.name = name;
+    this.nid = nid;
+    this.cell = cell;
+    this.drop = drop;
+    this.price = price;
+  }
+  detail() {
+    console.log(
+      `Class: ${this.Coachclass}, Sit serial: ${this.sit}, Name: ${
+        this.name
+      }, Nid: ${this.nid}, Contact:${this.cell}, Drop Area: ${
+        this.drop
+      }, Price: ${this.passengerNum * this.price}`
+    );
+  }
+}
+const Ticket1 = new Ticket(
+  'Business',
+  'A1,A2',
+  2,
+  'Mr & Mrs. Salimullah Khan',
+  '1246446232154',
+  '+880 1075882254',
+  'Shymoli square',
+  1100
+);
+const Ticket2 = new Ticket(
+  'Economy',
+  'B1,B2',
+  2,
+  'Kaua Kader',
+  '1246442871245',
+  '+880 1075855254',
+  'Gabtoli',
+  850
+);
+
+Ticket1.detail();
+Ticket2.detail();
