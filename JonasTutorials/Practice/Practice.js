@@ -164,13 +164,13 @@ class Ticket {
     this.drop = drop;
     this.price = price;
   }
-  detail() {
-    console.log(
+  detail(status) {
+    console.table(
       `Class: ${this.Coachclass}, Sit serial: ${this.sit}, Name: ${
         this.name
       }, Nid: ${this.nid}, Contact:${this.cell}, Drop Area: ${
         this.drop
-      }, Price: ${this.passengerNum * this.price}`
+      }, Price: ${this.passengerNum * this.price}...booking is ${status}`
     );
   }
 }
@@ -194,6 +194,17 @@ const Ticket2 = new Ticket(
   'Gabtoli',
   850
 );
+const Ticket3 = new Ticket(
+  'Normal',
+  'B-All, D-All, F-All, G-All',
+  16,
+  'Anonymous',
+  '515487963525',
+  '+880 1852697411',
+  'Gabtoli',
+  675
+);
 
-Ticket1.detail();
-Ticket2.detail();
+Ticket1.detail('Confirmed');
+Ticket2.detail('Pending');
+Ticket3.detail('Confirmed');
