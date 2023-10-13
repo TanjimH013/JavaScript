@@ -150,6 +150,9 @@ checkIn(train, passengerName);
 console.table(train);
 console.table(passengerName);
 
+///////////////////////////
+console.log('------Class------');
+
 class Ticket {
   constructor(Coachclass, sit, passengerNum, name, nid, cell, drop, price) {
     this.Coachclass = Coachclass;
