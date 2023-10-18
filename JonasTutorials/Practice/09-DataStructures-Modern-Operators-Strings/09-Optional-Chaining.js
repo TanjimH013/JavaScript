@@ -57,7 +57,7 @@ const restaurant = {
   },
 };
 
-if (restaurant.openingHours && restaurant.openingHours.fri);
+if (restaurant.openingHours && restaurant.openingHours.mon);
 console.log(restaurant.openingHours.mon.open);
 
 //With optional chaining
