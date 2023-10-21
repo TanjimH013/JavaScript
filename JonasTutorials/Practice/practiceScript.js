@@ -38,7 +38,7 @@ console.log(
   )
 );
 
-//Reverse Array
+//Reverse for loop
 const reverseString = function (str) {
   let newString = '';
   for (let i = str.length - 1; i >= 0; i--) {
