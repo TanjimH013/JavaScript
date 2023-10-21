@@ -1,4 +1,4 @@
-"Use-/strict";
+'Use-/strict';
 
 // const add = function (newElement) {
 //   let arr = [1, 2, 3, 4, 5, 6];
@@ -20,10 +20,10 @@ console.log(add([8, 9, 10]));
 
 const addName = function (newDATA) {
   let obj = {
-    person1: { name: "Makie", profession: "unemployed" },
-    person2: { name: "Pabelo", profession: "unemployed" },
-    person3: { name: "Rezor", profession: "unemployed" },
-    person4: { name: "Sett", profession: "unemployed" },
+    person1: { name: 'Makie', profession: 'unemployed' },
+    person2: { name: 'Pabelo', profession: 'unemployed' },
+    person3: { name: 'Rezor', profession: 'unemployed' },
+    person4: { name: 'Sett', profession: 'unemployed' },
   };
   for (let i = 0; i < newDATA; i++) {
     addName.push(newDATA);
@@ -33,7 +33,18 @@ const addName = function (newDATA) {
 
 console.log(
   addName(
-    { name: "Tamina", profession: "Officer" },
-    { name: "Xaya", profession: "Work at abroad" }
+    { name: 'Tamina', profession: 'Officer' },
+    { name: 'Xaya', profession: 'Work at abroad' }
   )
 );
+
+//Reverse Array
+const reverseString = function (str) {
+  let newString = '';
+  for (let i = str.length - 1; i >= 0; i--) {
+    newString = newString + str[i];
+  }
+  return newString;
+};
+
+console.log(reverseString("'B' 'A' 'N' 'G' 'L' 'A' 'D' 'E' 'S' 'H'"));

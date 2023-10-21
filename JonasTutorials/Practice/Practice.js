@@ -208,3 +208,6 @@ const Ticket3 = new Ticket(
 Ticket1.detail('Confirmed');
 Ticket2.detail('Pending');
 Ticket3.detail('Confirmed');
+
+
+
