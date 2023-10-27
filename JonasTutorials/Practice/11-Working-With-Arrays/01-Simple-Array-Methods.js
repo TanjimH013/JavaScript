@@ -119,3 +119,6 @@ console.log(letter);
 // console.log(arr.concat(arrTOW));
 
 console.log([...arr, ...arrTOW]);
+
+//JOIN METHOD
+console.log(letter.join(' / '));
