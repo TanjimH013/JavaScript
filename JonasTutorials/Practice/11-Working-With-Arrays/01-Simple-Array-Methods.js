@@ -106,3 +106,9 @@ arr.splice(-2);
 console.log(arr);
 arr.splice(1, 2);
 console.log(arr);
+
+//REVERSE METHOD
+arr = ['a', 'b', 'c', 'd', 'e', 'f'];
+const arrTOW = ['g', 'h', 'i', 'j', 'k'];
+console.log(arrTOW.reverse());
+console.log(arrTOW);
