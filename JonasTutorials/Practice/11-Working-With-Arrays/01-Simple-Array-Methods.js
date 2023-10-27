@@ -109,6 +109,13 @@ console.log(arr);
 
 //REVERSE METHOD
 arr = ['a', 'b', 'c', 'd', 'e', 'f'];
-const arrTOW = ['g', 'h', 'i', 'j', 'k'];
+const arrTOW = ['k', 'j', 'i', 'h', 'g'];
 console.log(arrTOW.reverse());
 console.log(arrTOW);
+
+//concatenate
+const letter = arr.concat(arrTOW);
+console.log(letter);
+// console.log(arr.concat(arrTOW));
+
+console.log([...arr, ...arrTOW]);
