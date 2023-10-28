@@ -1,7 +1,7 @@
-"Use-Strict";
+'Use-Strict';
 
 function logger() {
-  console.log("My Name is Tanjim");
+  console.log('My Name is Tanjim');
 }
 // Calling, Running, Invoking means function
 logger();
@@ -18,3 +18,11 @@ console.log(appleJuice);
 
 const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
+
+//simple function using concatenating
+const sleep = function (name, time) {
+  console.log(name + ' is sleeping from ' + time);
+};
+
+sleep('Tanjim', '10 pm');
+sleep('Nipu', '10 pm');
