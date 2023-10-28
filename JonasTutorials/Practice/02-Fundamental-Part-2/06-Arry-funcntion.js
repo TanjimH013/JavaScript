@@ -1,10 +1,10 @@
-"Use-Strict";
+'Use-Strict';
 
-const friendONE = "Shajib";
-const friendTOW = "Rayhan";
-const friendTHREE = "Pabel";
+const friendONE = 'Shajib';
+const friendTOW = 'Rayhan';
+const friendTHREE = 'Pabel';
 
-const friends = ["Shajib", "Rayhan", "Pabel"];
+const friends = ['Shajib', 'Rayhan', 'Pabel'];
 console.log(friends);
 
 const Y = new Array(1994, 1994, 1993);
@@ -16,8 +16,8 @@ console.log(friends[0]);
 console.log(friends.length);
 console.log(friends[friends.length - 1]);
 
-const firstName = "Tanjim";
-const tanjim = [firstName, "Hasan", 2023 - 1993, "Unemployed", friends];
+const firstName = 'Tanjim';
+const tanjim = [firstName, 'Hasan', 2023 - 1993, 'Unemployed', friends];
 console.log(tanjim);
 console.log(tanjim.length);
 

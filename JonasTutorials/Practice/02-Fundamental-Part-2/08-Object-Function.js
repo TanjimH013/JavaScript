@@ -12,7 +12,7 @@ console.log(tanjim);
 console.log(tanjim.age);
 console.log(tanjim['friends']);
 
-//Object using function
+//Object using function as property called method
 
 const Taxi = {
   brand: 'Banglar Bir',
