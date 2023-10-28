@@ -1,11 +1,13 @@
-"Use-Strict";
+'Use-Strict';
 
 const tanjim = {
-  firstName: "Tanjim",
-  lastName: "Hasan",
+  firstName: 'Tanjim',
+  lastName: 'Hasan',
   age: 2023 - 1995,
-  job: "Unemployed",
-  friends: ["Pabel", "Shajib", "Rayhan"],
+  job: 'Unemployed',
+  friends: ['Pabel', 'Shajib', 'Rayhan'],
 };
 
 console.log(tanjim);
+console.log(tanjim.age);
+console.log(tanjim['friends']);
