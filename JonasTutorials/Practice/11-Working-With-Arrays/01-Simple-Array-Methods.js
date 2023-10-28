@@ -121,4 +121,4 @@ console.log(letter);
 console.log([...arr, ...arrTOW]);
 
 //JOIN METHOD
-console.log(letter.join(' / '));
+console.log(letter.join(' - '));
