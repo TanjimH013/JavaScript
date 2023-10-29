@@ -99,19 +99,16 @@ console.log(arr.slice());
 
 console.log([...arr]);
 
+console.log('---SPLICE METHOD---');
 //SPLICE METHOD
-arr.splice();
-console.log(arr);
-arr.splice(-2);
-console.log(arr);
-arr.splice(1, 2);
+arr.splice(0, 2, 'A', 'B');
 console.log(arr);
 
+console.log('---REVERSE METHOD---');
 //REVERSE METHOD
 arr = ['a', 'b', 'c', 'd', 'e', 'f'];
 const arrTOW = ['k', 'j', 'i', 'h', 'g'];
 console.log(arrTOW.reverse());
-console.log(arrTOW);
 
 //concatenate
 const letter = arr.concat(arrTOW);
