@@ -119,3 +119,12 @@ console.log([...arr, ...arrTOW]);
 
 //JOIN METHOD
 console.log(letter.join(' - '));
+
+console.log('---Sort method---');
+//SORT METHOD
+
+const numbers = [50, 100, 5, 10, 1, 2, 3, 4];
+numbers.sort(function (x, y) {
+  return x - y;
+});
+console.log(numbers);
