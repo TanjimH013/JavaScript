@@ -24,4 +24,4 @@ const hug = function () {
 };
 document.body.addEventListener('click', hug);
 
-['Tanjim', 'Pabel', 'Rayhan', 'Shajib'].forEach(hug);
+['Tanjim', 'Pabel', 'Rayhan', 'Shajib', 'Zia', 'Tamzid'].forEach(hug);
