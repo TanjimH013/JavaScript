@@ -10,6 +10,8 @@ document.getElementById("demo").innerHTML = city;
 console.log(typeof city);
 console.log(city.length);
 
+city.push("Rongpur");
+
 for (i = 0; i < city.length; i++) {
   console.log(city[i]);
 }
