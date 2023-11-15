@@ -13,3 +13,9 @@ console.log(city.length);
 for (i = 0; i < city.length; i++) {
   console.log(city[i]);
 }
+
+console.log("--- ForEach Method ---");
+
+city.forEach(function (value) {
+  console.log(value);
+});
