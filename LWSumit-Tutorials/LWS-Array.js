@@ -10,8 +10,17 @@ document.getElementById("demo").innerHTML = city;
 console.log(typeof city);
 console.log(city.length);
 
+city.pop("Sylhet");
+
 city.push("Rongpur");
 
+city.shift("Borishal");
+
+city.unshift("Chittagong");
+
+city[5] = "Jessor";
+
+city[city.length] = "Comilla";
 for (i = 0; i < city.length; i++) {
   console.log(city[i]);
 }
