@@ -34,3 +34,16 @@ const isLeapYear = function (year) {
 };
 isLeapYear(2026);
 isLeapYear(2030);
+
+//Getting outs vowels from sentences using Array.from, include search method, forEach loop, if statement
+
+const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+countVowels = function (sentence) {
+  let count = 0;
+  const letter = Array.from(sentence);
+  letter.forEach(function (value) {
+    if (vowels.includes(value)) count++;
+  });
+  return count;
+};
+console.log(countVowels("I love My country name is Bangladesh"));
