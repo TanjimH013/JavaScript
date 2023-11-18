@@ -35,6 +35,9 @@ const isLeapYear = function (year) {
 isLeapYear(2026);
 isLeapYear(2030);
 
+console.log(
+  "--- Array.from, include search method, forEach loop, if statement ---"
+);
 //Getting outs vowels from sentences using Array.from, include search method, forEach loop, if statement
 
 const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
@@ -47,3 +50,17 @@ countVowels = function (sentence) {
   return count;
 };
 console.log(countVowels("I love My country name is Bangladesh"));
+
+//Getting outs duplicate & Unique numbers from a Array using filter method & indexOf search method
+
+const numbers = [0, 1, 2, 3, 4, 3, 5, 5, 6, 7, 8, 6, 9, 8];
+const duplicates = numbers.filter(function (value, index, array) {
+  return array.indexOf(value) !== index;
+});
+
+console.log(duplicates);
+
+const uniques = numbers.filter(function (value, index, array) {
+  return array.indexOf(value) === index;
+});
+console.log(uniques);
