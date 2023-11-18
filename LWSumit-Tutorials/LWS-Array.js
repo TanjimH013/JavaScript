@@ -42,3 +42,22 @@ numbers.sort(function (a, b) {
 });
 
 console.log(numbers);
+/////////////////////////////////////////////////////////
+
+const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+const countVowels = (sentence) => {
+  let count = 0;
+  const letter = Array.from(sentence);
+
+  letter.forEach(function (value) {
+    if (vowels.includes(value)) {
+      count++;
+    }
+  });
+  return count;
+};
+console.log(
+  countVowels(
+    `Internet refers to the interconnection of various networks of computers through which information can be accessed from anywhere. Internet is one of the greatest inventions in the history of science and technology. It enables us to access and give out information of all kinds through large distances.`
+  )
+);
