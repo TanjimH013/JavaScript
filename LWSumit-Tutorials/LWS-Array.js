@@ -45,7 +45,7 @@ console.log(numbers);
 /////////////////////////////////////////////////////////
 
 const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
-const countVowels = (sentence) => {
+const countVowels = function (sentence) {
   let count = 0;
   const letter = Array.from(sentence);
 
@@ -60,4 +60,29 @@ console.log(
   countVowels(
     `Internet refers to the interconnection of various networks of computers through which information can be accessed from anywhere. Internet is one of the greatest inventions in the history of science and technology. It enables us to access and give out information of all kinds through large distances.`
   )
+);
+
+//Getting Duplicate values from an Array
+
+const numbersArray = [
+  1, 13, 5, 20, 14, 15, 3, 18, 9, 7, 11, 5, 17, 6, 14, 4, 12, 10, 8, 16, 2, 11,
+  19, 10, 15,
+];
+const duplicateNumbers = numbersArray.filter(function (value, index, array) {
+  return array.indexOf(value) !== index;
+});
+console.log(duplicateNumbers);
+
+const uniqueNumbers = numbersArray.filter(function (value, index, array) {
+  return array.indexOf(value) === index;
+});
+
+console.log(uniqueNumbers);
+
+//Sorting an array
+
+console.log(
+  numbersArray.sort(function (a, b) {
+    return a - b;
+  })
 );
