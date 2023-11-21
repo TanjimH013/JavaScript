@@ -86,3 +86,12 @@ console.log(
     return a - b;
   })
 );
+
+//reduce an Array
+
+const reducer = function (previousValue, currentValue) {
+  return previousValue + currentValue;
+};
+
+const sum = numbersArray.reduce(reducer);
+console.log(sum);
