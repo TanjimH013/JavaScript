@@ -5,8 +5,6 @@ console.log(myNumber.toString(32));
 
 const city = [" Chittagong", " Dhaka", " Rajshahi", " Khulna ", " Sylhet"];
 
-document.getElementById("demo").innerHTML = city;
-
 console.log(typeof city);
 console.log(city.length);
 
@@ -29,6 +27,7 @@ console.log("--- ForEach Method ---");
 
 city.forEach(function (value) {
   console.log(value);
+  document.getElementById("city_value").innerHTML = value;
 });
 
 const numbers = [1, 5, 8, 50, 2, 10, 58, 100, 65, 3];
@@ -76,7 +75,7 @@ console.log(duplicateNumbers);
 const uniqueNumbers = numbersArray.filter(function (value, index, array) {
   return array.indexOf(value) === index;
 });
-
+document.getElementById("unik-num").innerHTML = uniqueNumbers;
 console.log(uniqueNumbers);
 
 //Sorting an array
@@ -95,3 +94,10 @@ const reducer = function (previousValue, currentValue) {
 
 const sum = numbersArray.reduce(reducer);
 console.log(sum);
+
+console.log("--- reduceRight ---");
+
+const sumTow = numbersArray.reduceRight(reducer);
+console.log(sumTow);
+
+console.log(typeof typeof 1);
