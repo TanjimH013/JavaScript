@@ -18,3 +18,12 @@ let r = paragraph.replace("147,570 square kilometers", "56,977 sq. miles");
 console.log(r);
 
 document.getElementById("prgrph").innerHTML = r;
+
+//Match
+
+let q = paragraph.match(/bangladesh | pakistan/gi);
+
+console.log(q);
+
+let s = paragraph.match("Bangladesh");
+console.log(s);
