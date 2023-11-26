@@ -52,3 +52,36 @@ const fizzBuzz = function (number) {
 };
 
 fizzBuzz(100);
+
+//Lets get out truthy value from an Array
+
+const mixedArr = [
+  "lws",
+  undefined,
+  "Hello! guys",
+  false,
+  "",
+  "android",
+  "apple",
+  13,
+  true,
+  "Good bye",
+  NaN,
+];
+
+//use filter function
+const filterArray = mixedArr.filter(function (el) {
+  if (el) {
+    return true;
+  } else {
+    return false;
+  }
+});
+
+console.log(filterArray);
+
+console.log("-------------------------");
+
+//ues boolean function
+const booleanArray = mixedArr.filter(Boolean);
+console.log(booleanArray);
