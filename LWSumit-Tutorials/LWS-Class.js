@@ -5,19 +5,20 @@ class person {
     this.age = age;
     this.id = id;
   }
-  insertCard() {
+  insertCard(status) {
     console.log(`Name: ${this.name}
 Age: ${this.age}
-ID: ${this.id}`);
+ID: ${this.id}
+Welcome! ${status}`);
   }
 }
-const personOne = new person("Rayhan", "29", 1828569871);
+const personOne = new person("Rayhan", 29, 1828569871);
 
-personOne.insertCard();
+personOne.insertCard("you may proceed");
 
-const personTow = new person("Pabel", "30", 4526987125);
+const personTow = new person("Pabel", 30, 4526987125);
 
-personTow.insertCard();
+personTow.insertCard("wait for some while");
 
 console.log("---------------");
 
@@ -78,7 +79,7 @@ const TicketTow = new Ticket(
   "Business",
   "B2,B3",
   2,
-  "Rayhan Mahmud",
+  "Md.Afzalur Rahman",
   "42265453384",
   "+880 1521486527",
   "Chittagong",
