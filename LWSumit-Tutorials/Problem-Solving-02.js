@@ -85,3 +85,30 @@ console.log("-------------------------");
 //ues boolean function
 const booleanArray = mixedArr.filter(Boolean);
 console.log(booleanArray);
+
+console.log("-------------------------");
+//Lets get out truthy value from an Object
+
+const mixedObj = {
+  a: "lws",
+  b: undefined,
+  c: "Hello! guys",
+  d: false,
+  e: "",
+  f: "android",
+  g: "apple",
+  h: 13,
+  i: true,
+  J: "Good bye",
+  k: NaN,
+};
+
+const truthyObject = function (mixedObj) {
+  for (let i in mixedObj) {
+    if (!mixedObj[i]) {
+      delete mixedObj[i];
+    }
+  }
+  return mixedObj;
+};
+console.log(truthyObject(mixedObj));
