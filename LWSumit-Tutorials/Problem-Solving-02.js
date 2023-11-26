@@ -15,3 +15,22 @@ const linearSearch = function (arr, val) {
 };
 
 console.log(linearSearch(["a", "b", "c", "d", "c"], "c"));
+
+// lets get out of the longest String from an Array and show its Index number
+
+//['America','Republic of Bangladesh','India','Pakistan']
+
+const longestString = function (names) {
+  let longestWord = "";
+
+  for (nam of names) {
+    if (nam.length > longestWord.length) {
+      longestWord = nam;
+    }
+  }
+  return [longestWord, names.indexOf(longestWord)];
+};
+
+console.log(
+  longestString(["America", "Republic of Bangladesh", "India", "Pakistan"])
+);
