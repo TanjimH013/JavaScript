@@ -34,3 +34,21 @@ const longestString = function (names) {
 console.log(
   longestString(["America", "Republic of Bangladesh", "India", "Pakistan"])
 );
+
+//How many numbers from 1 to 100 are divisible by 3 or 5 or both 3 and 5?
+
+const fizzBuzz = function (number) {
+  for (i = 1; i <= number; i++) {
+    if (i % 15 === 0) {
+      console.log(`${i} is FizzBuzz`);
+    } else if (i % 3 === 0) {
+      console.log(`${i} is Fizz`);
+    } else if (i % 5 === 0) {
+      console.log(`${i} is Buzz`);
+    } else {
+      console.log(`${i} is Normal`);
+    }
+  }
+};
+
+fizzBuzz(100);
