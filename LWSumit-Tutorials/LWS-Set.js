@@ -15,3 +15,7 @@ const entryValue = letter.entries(); // showing set all entries values
 for (const entry of entryValue) {
   console.log(entry);
 }
+
+console.log(typeof letter); // Checking Set is Object or not
+
+console.log(letter instanceof Set); // Checking Set Tru of False
