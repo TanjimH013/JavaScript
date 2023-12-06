@@ -12,8 +12,9 @@ const myMove = function () {
 
       animation.style.top = pos + "px";
       animation.style.left = pos + "px";
+      animation.style.backgroundColor = "#f08c00";
     } else {
-      clearInterval(interval);
+      clearInterval(setInterval);
     }
   }
 };

@@ -28,8 +28,20 @@
 .animation {
   width: 10em;
   height: 10em;
-  background-color: brown;
+  background-color: rgb(173, 16, 16);
   border-radius: 50%;
 
   position: absolute;
+}
+
+/*Event*/
+.event {
+  margin-top: 50px;
+  margin-left: 50px;
+  font-size: 2em;
+  color: chartreuse;
+}
+
+.button {
+  margin-left: 55px;
 }
