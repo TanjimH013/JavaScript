@@ -8,17 +8,29 @@
     <title>DOM</title>
   </head>
   <body>
-    <p class="paragraph">Welcome!</p>
+    <section class="dom-html">
+      <form
+        name="myForm"
+        action=""
+        onsubmit="return validateForm()"
+        method="post"
+      >
+        Name: <input type="text" name="fname" />
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
 
-    <form
-      name="myForm"
-      action=""
-      onsubmit="return validateForm()"
-      method="post"
-    >
-      Name: <input type="text" name="fname" />
-      <input type="submit" value="Submit" />
-    </form>
-    <script src="./LWS-DOM.js"></script>
+    <section class="dom-css">
+      <p class="paragraph">Welcome!</p>
+    </section>
+
+    <section class="dom-animation">
+      <button class="btn" onclick="myMove()">click Me</button>
+      <div class="container">
+        <div class="animation"></div>
+      </div>
+    </section>
+
+    <script src="./LWS-DOM-Animation.js"></script>
   </body>
 </html>

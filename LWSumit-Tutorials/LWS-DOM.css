@@ -3,8 +3,33 @@
 }
 
 .paragraph {
+  margin-left: 50px;
   font-size: 1.8em;
   font-weight: 500;
   line-height: 1.5;
   color: rgb(202, 14, 14);
+}
+
+/*Animation*/
+.btn {
+  margin-left: 50px;
+}
+
+.container {
+  margin-left: 50px;
+  margin-top: 15px;
+  width: 40em;
+  height: 40em;
+  background-color: cadetblue;
+
+  position: relative;
+}
+
+.animation {
+  width: 10em;
+  height: 10em;
+  background-color: brown;
+  border-radius: 50%;
+
+  position: absolute;
 }
