@@ -18,3 +18,18 @@ button.onclick = function () {
   button.style.fontSize = "2.9em";
   console.log(button);
 };
+
+//add Event handler
+const button2 = document.querySelector(".button2");
+button2.style.marginLeft = "25px";
+
+button2.addEventListener("click", function () {
+  button2.innerHTML = `Hi! I'm addEventListener`;
+  button2.style.fontSize = "2.9em";
+  button2.style.color = "crimson";
+  button2.style.fontWeight = "500";
+});
+
+button2.addEventListener("mouseover", function () {
+  button2.innerHTML = "Click me";
+});
