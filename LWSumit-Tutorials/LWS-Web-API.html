@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms API</title>
+  </head>
+  <body>
+    <section class="Forms-API">
+      <input id="id1" type="number" min="100" max="300" required /><button
+        onclick="validation()"
+      >
+        Ok
+      </button>
+
+      <p id="demo"></p>
+    </section>
+
+    <section class="History-API">
+      <a href="./">Page One</a>
+    </section>
+
+    <section class="Storage-API">
+      <h1>
+        <button onclick="setLocalStorage('username', 'tanjim')">
+          Set Local storage username
+        </button>
+      </h1>
+
+      <h1>
+        <button onclick="getLocalStorage('username')">
+          Get Local storage username
+        </button>
+      </h1>
+
+      <h1>
+        <button onclick="setLocalStorage('name', 'tanjim Hasan')">
+          Set Local storage name
+        </button>
+      </h1>
+
+      <h1>
+        <button onclick="getLocalStorage('name')">
+          Get Local storage name
+        </button>
+      </h1>
+
+      <h1>
+        <button onclick="removeLocalStorage('name')">
+          Remove Local storage name
+        </button>
+      </h1>
+
+      <h1>
+        <button onclick="clearLocalStorage()">Clear Local storage name</button>
+      </h1>
+    </section>
+
+    <script src="./LWS-Web-API.js"></script>
+  </body>
+</html>
