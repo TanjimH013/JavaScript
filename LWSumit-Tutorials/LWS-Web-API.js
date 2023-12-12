@@ -40,7 +40,7 @@ function getHistory() {
 
 ////////////////////////////////////////////////////
 
-// Storage API
+//Storage API
 
 function setLocalStorage(key, value) {
   localStorage.setItem(key, value);
