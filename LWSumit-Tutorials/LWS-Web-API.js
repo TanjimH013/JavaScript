@@ -57,3 +57,6 @@ function removeLocalStorage(key) {
 function clearLocalStorage() {
   localStorage.clear();
 }
+
+////////////////////////////
+//Worker API
