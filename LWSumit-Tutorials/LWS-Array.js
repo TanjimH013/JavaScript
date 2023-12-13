@@ -1,4 +1,3 @@
-"Use Strict";
 let myNumber = 32;
 //myNumber.toString(10);
 console.log(myNumber.toString(32));
@@ -27,7 +26,6 @@ console.log("--- ForEach Method ---");
 
 city.forEach(function (value) {
   console.log(value);
-  document.getElementById("city_value").innerHTML = value;
 });
 
 const numbers = [1, 5, 8, 50, 2, 10, 58, 100, 65, 3];
@@ -75,7 +73,7 @@ console.log(duplicateNumbers);
 const uniqueNumbers = numbersArray.filter(function (value, index, array) {
   return array.indexOf(value) === index;
 });
-document.getElementById("unik-num").innerHTML = uniqueNumbers;
+
 console.log(uniqueNumbers);
 
 //Sorting an array

@@ -1,7 +1,6 @@
-"Use Strict";
-
 //Object Constructor
-const Person = function (firstName, lastName, age, eyeColor) {
+
+const persons = function (firstName, lastName, age, eyeColor) {
   this.firstName = firstName;
   this.lastName = lastName;
   this.age = age;
@@ -10,17 +9,17 @@ const Person = function (firstName, lastName, age, eyeColor) {
   return `Name: ${firstName} ${lastName}, Age: ${age}, Eye Color: ${eyeColor}`;
 };
 
-console.log(Person("Tanjim", "Hasan", "30", "Dark Brown"));
-console.log(Person("Rayhan", "Mahmud", "30", "Black"));
-console.log(Person("Afzalur", "Rahman", "30", "Black"));
+console.log(persons("Tanjim", "Hasan", "30", "Dark Brown"));
+console.log(persons("Rayhan", "Mahmud", "30", "Black"));
+console.log(persons("Afzalur", "Rahman", "30", "Black"));
 
 //Object iterables
 
-const myNumber = {};
+const myNumbers = {};
 
 //make it iterable
 
-myNumber[Symbol.iterator] = function () {
+myNumbers[Symbol.iterator] = function () {
   let n = 0;
   let done = false;
   return {
@@ -37,6 +36,6 @@ myNumber[Symbol.iterator] = function () {
   };
 };
 
-for (let num of myNumber) {
+for (let num of myNumbers) {
   console.log(num);
 }

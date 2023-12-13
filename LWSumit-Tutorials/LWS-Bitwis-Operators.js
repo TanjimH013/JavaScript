@@ -1,4 +1,3 @@
-"use strict";
 //Decimal to Binary conversion
 console.log((488005).toString(2));
 
