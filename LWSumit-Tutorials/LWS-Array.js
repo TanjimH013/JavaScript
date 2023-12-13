@@ -98,4 +98,4 @@ console.log("--- reduceRight ---");
 const sumTow = numbersArray.reduceRight(reducer);
 console.log(sumTow);
 
-console.log(typeof typeof 2);
+console.log(typeof typeof 85);
