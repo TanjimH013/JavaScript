@@ -7,12 +7,25 @@
 </head>
 <body>
 
-    <h1> Fetch a JSON file with XMLHTTpRequest</h1>
+    <section>
+        <h1> Fetch a JSON file with XMLHTTpRequest</h1>
 
     <h2>Content written as an JSON array will be converted into a JavaScript array</h2>
 
     <h2 id="demo"></h2>
+    </section>
+
+
+    <section>
+        <select id="myselect" onchange="change_myselect"(this.value)></select>
+        <option value="value">Choose an option:</option>
+        <option value="customer">Customer</option>
+        <option value="product">Product</option>
+        <option value="suppliers">suppliers</option>
+
+        <p id="demo"></p>
+    </section>
     
-    <script src="./LWS-JSON-Server.js"></script>
+    <script src="./LWS-JSON-HTML.js"></script>
 </body>
 </html>
