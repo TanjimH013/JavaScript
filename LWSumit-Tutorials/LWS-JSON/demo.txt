@@ -1,1 +1,7 @@
-{"name":"Tanjim", "age":31, "pets":[{"animal":"dogs", "names":"Simba, Tiger"},{"animal":"cats", "names":"Tom, Jack"}]}
+{"name":"Tanjim",
+"age":31, 
+"pets":[
+{"animal":"dogs",
+    "names":"Simba, Tiger"},
+{"animal":"cats", 
+    "names":"Tom, Jack"}]}
