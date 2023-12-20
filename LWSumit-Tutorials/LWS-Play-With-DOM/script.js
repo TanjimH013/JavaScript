@@ -19,7 +19,7 @@
 
 
 
-// parent/child relation
+parent/child relation
 const grandparent = document.querySelector('.todo-list');
 const childrenOne = grandparent.querySelector('.item')
 childrenOne.style.color='red'
@@ -30,4 +30,19 @@ childrenTow.style.color = 'green'
 const childrenThree = childrenTow.nextElementSibling;
 childrenThree.style.color ='blue'
 
-console.log(children);
+
+
+
+
+//create an element in dom
+
+const divElement = document.createElement('div');
+
+divElement.className = 'red';
+
+divElement.setAttribute('id', 'red')
+divElement.setAttribute('title', 'Red Div');
+
+const container = document.querySelector('.todo-list');
+const h2Element = container.querySelector('h2');
+container.insertBefore(divElement,h2Element);
