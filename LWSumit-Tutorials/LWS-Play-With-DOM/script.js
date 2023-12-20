@@ -16,3 +16,6 @@ let itemAll = document.querySelectorAll('.item:childe')
 for(element of itemAll){
     element.style.color = 'red'
 }
+
+
+
