@@ -52,3 +52,13 @@ container.insertBefore(divElement,h2Element);
 //even listeners
 const headerElement = document.querySelector('.mouse');
 headerElement.addEventListener('mousemove',(event)=>{console.log(event);})
+
+
+const inputElement = document.querySelector('input[type="text"]');
+inputElement.addEventListener('keypress',(event)=>{
+    console.log(event);
+})
+
+const inputElementFocus= document.querySelector('input[type = "text"]');
+inputElementFocus.addEventListener('focus',(event)=>{console.log(event);})
+
