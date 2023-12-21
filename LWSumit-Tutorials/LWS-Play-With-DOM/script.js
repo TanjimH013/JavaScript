@@ -72,3 +72,7 @@ const inputElementCut = document.querySelector('input[type = "text"]');
 inputElementCut.addEventListener('cut',(event)=>{
     console.log(event);
 })
+
+
+const inputElementInput = document.querySelector('input[type = "text"');
+inputElementInput.addEventListener('input',(event)=>{console.log(event);})
