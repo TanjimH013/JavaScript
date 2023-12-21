@@ -66,3 +66,9 @@ const inputElementPast = document.querySelector('input[type = "text"]');
 inputElementPast.addEventListener('paste',(event)=>{
     console.log(event);
 })
+
+
+const inputElementCut = document.querySelector('input[type = "text"]');
+inputElementCut.addEventListener('cut',(event)=>{
+    console.log(event);
+})
