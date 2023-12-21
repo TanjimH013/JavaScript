@@ -62,3 +62,7 @@ inputElement.addEventListener('keypress',(event)=>{
 const inputElementFocus= document.querySelector('input[type = "text"]');
 inputElementFocus.addEventListener('focus',(event)=>{console.log(event);})
 
+const inputElementPast = document.querySelector('input[type = "text"]');
+inputElementPast.addEventListener('paste',(event)=>{
+    console.log(event);
+})
