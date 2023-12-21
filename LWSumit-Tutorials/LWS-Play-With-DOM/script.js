@@ -50,5 +50,5 @@ container.insertBefore(divElement,h2Element);
 
 
 //even listeners
-const headerElement = document.querySelector('#header');
-headerElement.addEventListener('click',(event)=>{console.log(event);})
+const headerElement = document.querySelector('.mouse');
+headerElement.addEventListener('mousemove',(event)=>{console.log(event);})
