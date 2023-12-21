@@ -19,7 +19,7 @@
 
 
 
-parent/child relation
+//parent/child relation
 const grandparent = document.querySelector('.todo-list');
 const childrenOne = grandparent.querySelector('.item')
 childrenOne.style.color='red'
@@ -46,3 +46,7 @@ divElement.setAttribute('title', 'Red Div');
 const container = document.querySelector('.todo-list');
 const h2Element = container.querySelector('h2');
 container.insertBefore(divElement,h2Element);
+
+
+
+//even listeners
