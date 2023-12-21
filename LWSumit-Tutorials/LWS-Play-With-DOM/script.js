@@ -64,15 +64,24 @@ inputElementFocus.addEventListener('focus',(event)=>{console.log(event);})
 
 const inputElementPast = document.querySelector('input[type = "text"]');
 inputElementPast.addEventListener('paste',(event)=>{
-    console.log(event);
 })
 
 
 const inputElementCut = document.querySelector('input[type = "text"]');
+
 inputElementCut.addEventListener('cut',(event)=>{
     console.log(event);
 })
 
 
 const inputElementInput = document.querySelector('input[type = "text"');
-inputElementInput.addEventListener('input',(event)=>{console.log(event);})
+inputElementInput.addEventListener('input',(event)=>{console.log(event.target.value);})
+
+
+//preventing auto reload page
+
+const formElement = document.querySelector('form');
+formElement.addEventListener('submit',(event)=>{
+    event.preventDefault()
+    console.log(event.target);
+})
